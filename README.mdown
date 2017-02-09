@@ -1,0 +1,10 @@
+# TODO MVC App
+This version created February 2017.
+
+Here's the [Source repo](https://github.com/udacity/ud989-todo-app).
+Uses Backbone.js organization library.
+
+## Added features & functionalities
+- When an item is checked, `--DONE` will be added at the end of the todo item.
+- Now there's an Edit button (pencil icon) on the todo items.
+- When you hover over an item, there's a prioritize button (`!` icon). Click on it and text will turn red.
