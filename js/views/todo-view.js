@@ -52,6 +52,7 @@ var app = app || {};
 
 			this.$el.html(this.template(this.model.toJSON()));
 			this.$el.toggleClass('completed', this.model.get('completed'));
+			this.$el.toggleClass('priority', this.model.get('prioritized'));
 			this.toggleVisible();
 			this.$input = this.$('.edit');
 			return this;
@@ -67,9 +68,9 @@ var app = app || {};
 				app.TodoFilter === 'completed';
 		},
 
-		// Toggle the `"priority"` state of the item.
+		// Toggle the `"prioritized"` state of the model.
 		prioritized: function() {
-			this.$el.toggleClass('priority');
+			this.model.togglePriority();
 		},
 
 		// Toggle the `"completed"` state of the model.
